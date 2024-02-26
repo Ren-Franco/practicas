@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(30, 30, 35);
+    height: 50px;
+    box-shadow: 0 0 5px black;
+    padding: 20px 100px;
+    gap: 30px;
+}
+
+header .imagen-logo{
+    margin-right: auto;
+    color: white;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+}
+
+header button{
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(2, 95, 97);
+    padding: 0 20px;
+    color: white;
+    width: 90px;
+    height: 28px;
+    border-radius: 12px;
+    border: 1px;
+    border-color: black;
+}
