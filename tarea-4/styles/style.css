@@ -28,12 +28,10 @@
     justify-content: space-between;
     gap: 15px;
     background-color: var(--light-primary-color);
-    height: 200px;
-    width: 300px;
-    padding: 15px 20px;
+    height: 250px;
+    width: 350px;
+    padding: 40px;
 }
-
-/* card inside */
 
 .card-section .card div{
     display: flex;
@@ -43,7 +41,7 @@
 .card-section .card p{
     font-weight: 400;
     height: 180px;
-    /* Añadir height */
+    line-height: 24px;
 }
 
 .card-section .card .review-stars{
