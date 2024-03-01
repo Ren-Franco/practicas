@@ -1,0 +1,105 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url(./fonts.css);
+
+
+/* Normalizacion */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--principal-font);
+}
+
+html{
+    font-size: 16px;
+}
+
+/* Section */
+
+.card-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    padding: 100px;
+    gap: 30px;
+}
+
+.card-section .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: var(--light-primary-color);
+    height: 250px;
+    width: 350px;
+    padding: 40px;
+}
+
+.card-section .card div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-section .card p{
+    font-weight: 400;
+    height: 180px;
+    line-height: 24px;
+}
+
+.card-section .card h2{
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.card-section .card .review-stars{
+    color: var(--secondary-color);
+    gap: 8px;
+}
+
+.card-section .card .review-stars i{
+    font-size: 18px;
+}
+
+.card-section .card .bi-chevron-right{
+    color: var(--primary-color);
+}
+
+/* media screen */
+
+@media screen and (max-width: 1024px) {
+    .card-section{
+        flex-direction: column;
+    }
+    .card-section .card{
+        width: 700px;
+        height: 180px;
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .card-section .card{
+        width: 480px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .card-section .card{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .card-section .card{
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .card-section .card{
+        height: 350px;
+    }
+}
