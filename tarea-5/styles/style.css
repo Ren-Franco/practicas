@@ -68,6 +68,12 @@ html{
 
 /* media screen */
 
+@media screen and (max-width: 1200px){
+    .card-section .card{
+        height: 290px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .card-section{
         flex-direction: column;
