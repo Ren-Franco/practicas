@@ -1,0 +1,191 @@
+@import url(./fonts.css);
+@import url(https://use.typekit.net/zoa6afx.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Normalizacion */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+/* Buttons */
+
+.btn-primary{
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.btn-request{
+    padding: 12px 18px;
+    width: 160px;
+    height: 45px;
+}
+
+.btn-sing-up{
+    padding: 12px 18px;
+    width: 160px;
+    height: 45px;
+}
+
+.btn-sing-in{
+    width: 100%;
+    height: 40px;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 70px;
+    width: 100%;
+    height: 100px;
+}
+
+/* Body */
+
+.sign-in-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    gap: 100px;
+}
+
+.sign-in-section .sign-in{
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-in-section .sign-in h2{
+    font-size: 30px;
+}
+
+.sign-in-section .sign-in p{
+    width: 70%;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.sign-in-section .sign-in form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.sign-in-section .sign-in form input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-weight: 500;
+}
+
+.sign-in-section .sign-in .passcode-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+.sign-in-section .sign-in .passcode-input .btn-hide{
+    position: absolute;
+    right: 18px;
+    font-size: 12px;
+}
+
+.sign-in-section .sign-in .sign-in-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.sign-in-section .sign-in span{
+    font-weight: 300;
+}
+
+.sign-in-section .sign-in h3{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sign-in-section .sign-in .sign-in-buttons button{
+    border: 1px solid black;
+    border-radius: 40px;
+    height: 32px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+
+/* Imagen */
+
+.sign-in-section .imagen img{
+    width: 400px;
+    height: 400px;
+}
+
+/* Screen media */
+
+@media screen and (max-width:1024px){
+    .sign-in-section .imagen {
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+}
